@@ -20,7 +20,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@aimeter/aimeter-backend-library": "^0.0.6",
+    "@aimeter/aimeter-backend-library": "^0.0.11",
     "@fastify/static": "^7.0.3",
     "@nestjs-modules/mailer": "^1.11.2",
     "@nestjs/axios": "^3.0.2",
@@ -34,7 +34,6 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/platform-fastify": "^10.3.8",
     "@nestjs/schedule": "^4.0.2",
-    "@nestjs/swagger": "^7.3.1",
     "@react-email/components": "^0.0.16",
     "axios": "^1.6.8",
     "bcrypt": "^5.1.1",

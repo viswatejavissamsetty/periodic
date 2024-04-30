@@ -5,7 +5,6 @@ import {
 import { CacheKey } from '@nestjs/cache-manager';
 import { Controller, Get, Query } from '@nestjs/common';
 import { EventPattern, Payload } from '@nestjs/microservices';
-import { ApiTags } from '@nestjs/swagger';
 import {
   CommonAutocompleteQueryDTO,
   CommonQueryDTO,
@@ -14,7 +13,6 @@ import { DailySummaryDTO } from './daily-summary.dtos';
 import { DailySummaryService } from './daily-summary.service';
 
 @Controller('daily-summary')
-@ApiTags('Daily Summary')
 export class DailySummaryController {
   constructor(
     private readonly dailySummaryService: DailySummaryService,

@@ -6,13 +6,11 @@ import {
 } from '@aimeter/aimeter-backend-library';
 import { Controller, Get, Query } from '@nestjs/common';
 import { EventPattern, MessagePattern, Payload } from '@nestjs/microservices';
-import { ApiTags } from '@nestjs/swagger';
 import { CommonAutocompleteQueryDTO } from '../../dtos/common.query.dto';
 import { GetReadingsQueryDTO, MeterReadingsDTO } from './regular-readings.dtos';
 import { RegularReadingsService } from './regular-readings.service';
 
 @Controller('regular-readings')
-@ApiTags('Regular Readings')
 export class RegularReadingsController {
   constructor(
     private readonly regularReadingsService: RegularReadingsService,
