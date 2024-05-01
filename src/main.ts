@@ -33,6 +33,6 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
 
   app.startAllMicroservices();
-  await app.listen(configService.get('PERIODIC_PORT'), '0.0.0.0');
+  await app.listen(configService.get('PORT'), '0.0.0.0');
 }
 bootstrap();
